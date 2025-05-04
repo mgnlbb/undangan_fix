@@ -40,7 +40,7 @@ export const comment = (() => {
             .on('en', '')
             .get();
 
-        return `<div class="text-left"><p class="fw-bold p-0 m-0" style="font-size: 0.95rem;">${desc}</p></div>`;
+        return `<div class="text-center"><p class="fw-bold p-0 m-0" style="font-size: 0.95rem;">${desc}</p></div>`;
     };
 
     /**
