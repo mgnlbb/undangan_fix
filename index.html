@@ -84,8 +84,8 @@
 <!-- <html lang="id" data-bs-theme="auto"> ['auto', 'dark', 'light'] -->
 <!-- Recommend use 'data-src' in img tag -->
 
-<!-- <body data-key="bfb9cfea33ab7ae21a315fbd6f065a815d3e20ff2f007aa2ca" data-url="https://api.ulems.my.id/" data-audio="./assets/music/sound.mp3"> -->
-<body data-audio="./assets/music/sound_fix.mp3"></body>
+<body data-key="304afb28e300e697608cc7a12777116f920c1c6152537439e0" data-url="https://backend-undangan-ten-blush.vercel.app/" data-audio="./assets/music/sound.mp3">
+<!-- <body data-url="https://backend-undangan-ten-blush.vercel.app/" data-audio="./assets/music/sound_fix.mp3"></body> -->
 
     <!-- Root Invitation -->
     <div class="row m-0 p-0 opacity-0" id="root">
@@ -346,13 +346,13 @@
                         <!-- <p class="py-2 m-0" style="font-size: 0.95rem;">Demi kehangatan bersama, kami memohon kesediaan Anda untuk mengenakan dress code berikut:</p> -->
 
                         <!-- Love animation -->
-                        <!-- <div class="position-relative">
+                        <div class="position-relative">
                             <div class="position-absolute" style="top: 0%; left: 5%;">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="opacity-50" data-time="2000" data-class="animate-love" viewBox="0 0 16 16">
                                     <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
                                 </svg>
                             </div>
-                        </div> -->
+                        </div>
 
                         <!-- <div class="py-2" data-aos="fade-down" data-aos-duration="1500">
                             <h2 class="font-esthetic m-0 py-2" style="font-size: 2rem;">Batik</h2>
@@ -442,7 +442,7 @@
                 </svg>
 
                 <!-- Love Gift -->
-                <section class="bg-light-dark pb-4">
+                <section class="bg-light-dark pb-4" id="love-gift">
                     <div class="container text-center">
                         <h2 class="font-esthetic pt-3 mb-4" style="font-size: 2.25rem;">Love Gift</h2>
                         <p class="mb-1" style="font-size: 0.95rem;">Dengan hormat, bagi Anda yang ingin memberikan tanda kasih kepada kami, dapat melalui:</p>
@@ -467,7 +467,7 @@
                                     </div>
                                 </div>
                                 <div class="mt-2">
-                                    <img src="./assets/images/placeholder.webp" data-src="https://upload.wikimedia.org/wikipedia/commons/e/ef/UOB_Logo.svg" class="img-fluid p-1 rounded" style="max-width: 9vh; background-color: var(--bs-gray-300);" alt="mandiri">
+                                    <img src="./assets/images/placeholder.webp" data-src="https://upload.wikimedia.org/wikipedia/commons/e/e0/UOB_Logo_%282022%29.svg" class="img-fluid p-1 rounded" style="max-width: 9vh; background-color: var(--bs-gray-300);" alt="bca">
                                     <div class="d-flex justify-content-between align-items-center mt-2">
                                         <p class="m-0 p-0" style="font-size: 0.85rem;"><i class="fa-solid fa-credit-card me-1"></i>7503312992</p>
                                         <!-- Ubah juga data-copy sesuai dengan no rekening -->
@@ -534,7 +534,7 @@
                                     <button class="btn btn-outline-auto btn-sm shadow-sm rounded-4 py-0" style="font-size: 0.75rem;" data-copy="0812345678" onclick="undangan.util.copy(this)"><i class="fa-solid fa-copy"></i></button>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <p class="my-0 p-0 text-truncate me-2" style="fongt-size: 0.85rem;"><i class="fa-solid fa-location-dot me-1"></i>RT 003/RW 001 (gang depan masjid Al-Istiqomah) Desa Laren Kecamatan Bumiayu Kabupaten Brebes</p>
+                                    <p class="my-0 p-0 text-truncate me-2" style="font-size: 0.85rem;"><i class="fa-solid fa-location-dot me-1"></i>RT 003/RW 001 (gang depan masjid Al-Istiqomah) Desa Laren Kecamatan Bumiayu Kabupaten Brebes</p>
                                     <!-- Ubah juga data-copy sesuai dengan alamat -->
                                     <button class="btn btn-outline-auto btn-sm shadow-sm rounded-4 py-0" style="font-size: 0.75rem;" data-copy="RT 10 RW 02, Desa Pajerukan, Kec. Kalibagor, Kab. Banyumas, Jawa Tengah 53191." onclick="undangan.util.copy(this)"><i class="fa-solid fa-copy"></i></button>
                                 </div>
@@ -564,14 +564,14 @@
                             </div>
 
                             <div class="d-block mb-3" id="comment-form-default">
-                                <div id="information" class="alert alert-info alert-dismissible fade show rounded-4" role="alert">
+                                <!-- <div id="information" class="alert alert-info alert-dismissible fade show rounded-4" role="alert">
                                     <button type="button" class="btn-close rounded-4 p-3" data-bs-dismiss="alert" aria-label="Close" onclick="undangan.guest.closeInformation()"></button>
 
                                     <p style="font-size: 1.5rem;">Bestieee!!!</p>
                                     <p class="m-0">Cobain like seperti Instagram, dengan tap tap bagian komentarnya</p>
                                     <hr class="my-2">
                                     <p class="m-0">Sama bisa format text seperti Whatsapp lohh... cobainn jugaaa, makaciwww bestieee</p>
-                                </div>
+                                </div> -->
 
                                 <label for="form-comment" class="form-label my-1"><i class="fa-solid fa-comment me-2"></i>Ucapan &amp; Doa</label>
                                 <div class="position-relative">
@@ -590,7 +590,9 @@
                         </div>
 
                         <!-- Comments -->
-                        <div class="py-3" id="comments" data-loading="false"></div>
+                        <div class="border rounded-5 shadow p-3 mb-2">
+                            <div class="py-3" id="comments" data-loading="false"></div>
+                        </div>
 
                         <!-- Pagination -->
                         <nav class="d-flex d-none justify-content-center mt-1 mb-0" id="pagination"></nav>
@@ -646,9 +648,9 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#gallery">
-                            <i class="fa-solid fa-images"></i>
-                            <span class="d-block" style="font-size: 0.7rem;">Galeri</span>
+                        <a class="nav-link" href="#love-gift">
+                            <i class="fa-solid fa-gift"></i>
+                            <span class="d-block" style="font-size: 0.7rem;">Gift</span>
                         </a>
                     </li>
                     <li class="nav-item">
