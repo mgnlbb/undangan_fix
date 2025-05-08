@@ -34,8 +34,19 @@ export const navbar = (() => {
         showActiveTab(btn, 'button-setting');
     };
 
+    /**
+     * @param {HTMLElement} btn
+     * @returns {void}
+     */
+    const buttonNavBagikan = (btn) => {
+        showActiveTab(btn, 'button-bagikan');
+    };
+
+
     return {
         buttonNavHome,
         buttonNavSetting,
+        buttonNavBagikan,
+
     };
 })();
