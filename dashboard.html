@@ -5,18 +5,18 @@
     <!-- Common -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Dashboard Ulems">
-    <title>Dashboard Ulems</title>
+    <meta name="description" content="Dashboard Labib & Dinda">
+    <title>Dashboard Labib & Dinda</title>
 
     <!-- Appearance -->
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-title" content="Dashboard Ulems">
+    <meta name="apple-mobile-web-app-title" content="Dashboard Labib & Dinda">
     <meta name="theme-color" content="#f8f9fa">
     <meta name="color-scheme" content="dark light">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="shortcut icon" type="image/x-icon" href="https://ulems.my.id/assets/favicon.ico">
-    <link rel="apple-touch-icon" sizes="192x192" href="https://ulems.my.id/assets/images/icon-192x192.png">
-    <link rel="icon" type="image/x-icon" href="https://ulems.my.id/assets/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="https://labibdinda.my.id/assets/favicon.ico">
+    <link rel="apple-touch-icon" sizes="192x192" href="https://labibdinda.my.id/assets/images/icon-192x192.png">
+    <link rel="icon" type="image/x-icon" href="https://labibdinda.my.id/assets/favicon.ico">
 
     <!-- Preconnect CDN -->
     <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
@@ -50,7 +50,7 @@
 <!-- data-bs-theme ['auto', 'dark', 'light'] -->
 
 <!-- <body data-key="1e4d5e5f0d137a8b7bcc1d699de6b9609df28aa0eb495246a3" data-url="https://undanganfix.vercel.app/"> -->
-    <body data-key="1e4d5e5f0d137a8b7bcc1d699de6b9609df28aa0eb495246a3" data-url="https://undanganfix.vercel.app/" data-audio="./assets/music/sound_oke.mp3">
+    <body data-key="1e4d5e5f0d137a8b7bcc1d699de6b9609df28aa0eb495246a3" data-url="https://undanganfix.vercel.app/">
 
     <!-- Nav bottom -->
     <nav class="navbar navbar-expand fixed-bottom rounded-top-4 border-top d-md-none d-lg-none d-xl-none p-0">
@@ -61,12 +61,6 @@
                     <span class="d-block" style="font-size: 0.7rem;">Home</span>
                 </button>
             </li>
-            <li class="nav-item">
-                <button class="nav-link" onclick="undangan.admin.navbar.buttonNavSetting(this)">
-                    <i class="fa-solid fa-gear"></i>
-                    <span class="d-block" style="font-size: 0.7rem;">Setting</span>
-                </button>
-            </li>
 
             <li class="nav-item">
                 <button class="nav-link" onclick="undangan.admin.navbar.buttonNavBagikan(this)">
@@ -74,6 +68,14 @@
                     <span class="d-block" style="font-size: 0.7rem;">Bagikan</span>
                 </button>
             </li>
+
+            <li class="nav-item">
+                <button class="nav-link" onclick="undangan.admin.navbar.buttonNavSetting(this)">
+                    <i class="fa-solid fa-gear"></i>
+                    <span class="d-block" style="font-size: 0.7rem;">Setting</span>
+                </button>
+            </li>
+
 
 
         </ul>
@@ -103,14 +105,15 @@
                             <i class="fa-solid fa-house ms-3 me-2"></i>Home
                         </button>
                     </li>
-                    <li class="nav-item pe-2" role="presentation">
-                        <button class="btn-theme-auto nav-link w-100 text-start fw-semibold my-1 rounded-4 shadow-sm" data-bs-toggle="pill" data-bs-target="#pills-setting" id="button-setting" type="button" role="tab" aria-controls="pills-setting" aria-selected="false">
-                            <i class="fa-solid fa-gear ms-3 me-2"></i>Setting
-                        </button>
-                    </li>
+
                     <li class="nav-item pe-2" role="presentation">
                         <button class="btn-theme-auto nav-link w-100 text-start fw-semibold my-1 rounded-4 shadow-sm" data-bs-toggle="pill" data-bs-target="#pills-bagikan" id="button-bagikan" type="button" role="tab" aria-controls="pills-bagikan" aria-selected="false">
                             <i class="fa-solid fa-share-nodes ms-3 me-2"></i>Bagikan
+                        </button>
+                    </li>
+                    <li class="nav-item pe-2" role="presentation">
+                        <button class="btn-theme-auto nav-link w-100 text-start fw-semibold my-1 rounded-4 shadow-sm" data-bs-toggle="pill" data-bs-target="#pills-setting" id="button-setting" type="button" role="tab" aria-controls="pills-setting" aria-selected="false">
+                            <i class="fa-solid fa-gear ms-3 me-2"></i>Setting
                         </button>
                     </li>
 
@@ -380,10 +383,10 @@
                             </div>
                         </div>
 
-                        <div class="p-3 bg-theme-auto mb-4 rounded-4 shadow">
+                        <!-- <div class="p-3 bg-theme-auto mb-4 rounded-4 shadow">
                             <p class="mx-0 mt-0 mb-1 p-0 fw-bold"><i class="fa-solid fa-heart me-2"></i>Love Project</p>
                             <p class="m-0 p-0">If you want to support me, consider <a target="_blank" rel="noopener noreferrer" href="https://saweria.co/dewanakl">buying me a coffee</a><i class="fa-solid fa-mug-hot ms-1"></i></p>
-                        </div>
+                        </div> -->
                     </section>
 
                  
@@ -399,46 +402,71 @@
                         </h5>
                         </div>
                     
-                        <!-- Base URL -->
-                        <div class="p-3 bg-theme-auto mb-3 rounded-4 shadow">
-                        <p class="fw-bold mb-2"><i class="fa-solid fa-link me-2"></i>Base URL</p>
-                        <input type="text" id="baseUrl" class="form-control form-control-sm rounded-4 shadow-sm" value="https://labibdinda.my.id" />
-                        </div>
+                        
                     
                         <div class="row g-3 mb-3">
-                        <!-- Nama Tamu -->
-                        <div class="col-md-4">
-                            <div class="p-3 bg-theme-auto rounded-4 shadow h-100">
-                            <p class="fw-bold mb-2"><i class="fa-solid fa-users me-2"></i>Nama Tamu</p>
-                            <textarea id="guestNames" class="form-control form-control-sm rounded-4 shadow-sm" rows="12" placeholder="Contoh:\nTungling\nAndi\nBudi"></textarea>
+                            <!-- Nama Tamu -->
+                            <div class="col-md-4">
+                                <div class="p-3 bg-theme-auto rounded-4 shadow h-100">
+                                <p class="fw-bold mb-2"><i class="fa-solid fa-users me-2"></i>Daftar Nama Tamu</p>
+                                <textarea id="guestNames" class="form-control form-control-sm rounded-4 shadow-sm" rows="12" placeholder="Pisahkan nama masing-masing tamu dengan tombol enter"></textarea>
+                                </div>
+                            </div>
+                        
+                            <!-- Template Pesan -->
+                            <div class="col-md-8">
+                                <div class="p-3 bg-theme-auto rounded-4 shadow h-100">
+                                <p class="fw-bold mb-2"><i class="fa-solid fa-file-lines me-2"></i>Template Pesan</p>
+                                
+                                <textarea id="templatePesan" rows="12"
+                                class="form-control form-control-sm rounded-4 shadow-sm"
+                                placeholder="Masukkan template...">{{defaultTemplate}}</textarea>
+                                </div>
                             </div>
                         </div>
-                    
-                        <!-- Template Pesan -->
-                        <div class="col-md-8">
-                            <div class="p-3 bg-theme-auto rounded-4 shadow h-100">
-                            <p class="fw-bold mb-2"><i class="fa-solid fa-file-lines me-2"></i>Template Pesan</p>
-                            
-                            <textarea id="templatePesan" rows="12"
-                            class="form-control form-control-sm rounded-4 shadow-sm"
-                            placeholder="Masukkan template...">{{defaultTemplate}}</textarea>
-                            </div>
-                        </div>
-                        </div>
-                    
-                        <!-- Preview Pesan -->
+
+                       
+                        <!-- Base URL -->
                         <div class="p-3 bg-theme-auto mb-3 rounded-4 shadow">
+                            <p class="fw-bold mb-2"><i class="fa-solid fa-link me-2"></i>Base URL</p>
+                            <input type="text" id="baseUrl" class="form-control form-control-sm rounded-4 shadow-sm" value="https://labibdinda.my.id" readonly/>
+                        </div>
+                    
+                    
+                        <!-- Preview Collapse Trigger -->
+                        <div class="d-flex justify-content-center mb-3">
+                            <button class="btn btn-sm btn-outline-secondary rounded-4 shadow-sm" data-bs-toggle="collapse" data-bs-target="#previewCollapse" aria-expanded="false" aria-controls="previewCollapse">
+                            <i class="fa-solid fa-eye me-1"></i>Lihat Preview Pesan
+                            </button>
+                        </div>
+                                
+                                
+                    
+                         
+                        <!-- Preview Collapse Content -->
+                        <div class="collapse" id="previewCollapse">
+                            <div class="p-3 bg-theme-auto mb-3 rounded-4 shadow">
+                            <p class="fw-bold mb-2"><i class="fa-solid fa-eye me-2"></i>Preview Pesan (nama pertama)</p>
+                            <div id="previewPesan" class="border rounded-4 p-3 text-muted" style="white-space: pre-wrap">
+                                (Masukkan setidaknya 1 nama untuk melihat preview)
+                            </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Preview Pesan -->
+                        <!-- <div class="p-3 bg-theme-auto mb-3 rounded-4 shadow">
                         <p class="fw-bold mb-2"><i class="fa-solid fa-eye me-2"></i>Preview Pesan (nama pertama)</p>
                         <div id="previewPesan" class="border rounded-4 p-3 text-muted" style="white-space: pre-wrap">
                             (Masukkan setidaknya 1 nama untuk melihat preview)
                         </div>
-                        </div>
+                        </div> -->
                     
                         <!-- Tombol Generate -->
                         <div class="d-flex justify-content-center mb-3">
-                        <button class="btn btn-sm btn-primary rounded-4 shadow-sm" id="generateBtn">
+                            <button class="btn btn-sm btn-primary rounded-4 shadow-sm w-100 w-md-auto" id="generateBtn">
                             <i class="fa-solid fa-wand-magic-sparkles me-1"></i>Generate
-                        </button>
+                            </button>
                         </div>
                     
                         <!-- Tabel Hasil -->
@@ -485,6 +513,8 @@ Bapak/Ibu/Saudara/i
 *{{nama}}*
 _di tempat_
 
+_Assalamualaikum  warahmatullahi wabarakaatuh._
+
 Tanpa mengurangi rasa hormat, perkenankan kami mengundang Bapak/Ibu/Saudara/i, untuk menghadiri acara Resepsi Pernikahan Kami
 
 Info lebih lengkap klik link dibawah ini
@@ -494,6 +524,8 @@ Merupakan suatu kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan untuk
 
 Kami yang berbahagia
 *Dinda & Labib*
+
+_Wassalamualaikum Warahmatullahi Wabarakatuh_
 
 \`Mohon maaf perihal undangan hanya dibagikan melalui pesan ini.\``;
 
@@ -536,13 +568,13 @@ document.getElementById("generateBtn").addEventListener("click", () => {
     }
 
     const table = document.createElement("table");
-    table.className = "table table-bordered table-sm align-middle";
+    table.className = "table table-bordered table-striped table-sm align-middle";
     table.innerHTML = `
-    <thead class="table-light">
+    <thead>
         <tr>
         <th>Nama</th>
-        <th>WhatsApp</th>
-        <th>Salin Teks!</th>
+        <th>Link WhatsApp</th>
+        <th>Copy Teks</th>
         </tr>
     </thead>
     <tbody></tbody>
@@ -558,7 +590,7 @@ document.getElementById("generateBtn").addEventListener("click", () => {
     row.innerHTML = `
         <td>${nama}</td>
         <td><a href="${waLink}" target="_blank" class="btn btn-success btn-sm rounded-4 shadow-sm">Bagikan ke WhatsApp</a></td>
-        <td><button class="btn btn-secondary btn-sm rounded-4 shadow-sm copyMsgBtn" data-msg="${encodeURIComponent(pesan)}">Copy Teks!</button></td>
+        <td><button class="btn btn-secondary btn-sm rounded-4 shadow-sm copyMsgBtn" data-msg="${encodeURIComponent(pesan)}">Copy</button></td>
     `;
     tbody.appendChild(row);
     });
