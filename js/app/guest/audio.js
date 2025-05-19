@@ -16,7 +16,7 @@ export const audio = (() => {
     /**
      * @type {Promise<void>|null}
      */
-    let canPlay = null;
+    // let canPlay = null;
 
     let isPlay = false;
 
@@ -33,7 +33,7 @@ export const audio = (() => {
 
         music.disabled = true;
         try {
-            await canPlay;
+            // await canPlay;
             await audioEl.play();
             isPlay = true;
             music.disabled = false;
@@ -87,7 +87,7 @@ export const audio = (() => {
             audioEl.autoplay = false;
             audioEl.controls = false;
 
-            canPlay = new Promise((res) => audioEl.addEventListener('canplay', res));
+            // canPlay = new Promise((res) => audioEl.addEventListener('canplay', res));
 
             progress.complete('audio');
 
